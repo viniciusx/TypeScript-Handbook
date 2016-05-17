@@ -87,14 +87,14 @@ Simply create a new file in your project root named `tsconfig.json` and fill it 
         "target": "es5"
     },
     "files": [
-        "./typings/main.d.ts",
+        "./typings/index.d.ts",
         "./src/require-config.ts",
         "./src/hello.ts"
     ]
 }
 ```
 
-We're including `typings/main.d.ts`, which Typings created for us.
+We're including `typings/index.d.ts`, which Typings created for us.
 That file automatically includes all of your installed dependencies.
 
 You might be wondering about a separate file named `browser.d.ts` in the `typings` folder, especially since we're going to run this in a browser.
